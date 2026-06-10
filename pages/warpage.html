@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Warpage </title>
+  </head>
+  <body>
+  
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+			    <li class="nav-item active">
+				  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+			    </li>
+			  </ul>
+		  </div>
+	  </nav>
+		
+		
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Warpage </h1>      
+        <p>Parts warpage - In particualar with regards to Primary Package warpage. If warpage is happening on different lines at the same 
+          time it could be resin related</p>
+        <img src="../images/warpage.jpg" class="img-fluid" alt="Warpage">
+
+      </div>
+
+
+      <h3> Which way is part warping</h3>
+      <h4> Part bending to the B-half</h4>
+      <p> 1. If part is bending to the B-half could mean that the bowl area is getting stuck to the A-half. This could indicate that
+        there is too much hold pressure.</p>
+      <p> 2. Also check that cavity ventilation is set up correctly.</p>
+      <p> 3. Nestal Only: Check Parametes T74.1(Blowing Time mold aeration 1) and T75.1(Delay time from start cooling time) in page 2.6 Air Controls. The 
+        sum of these two parameters must be bigger than the cooling time. If not the cavity ventilation will stop blowing  before the cooling time finish and 
+        mold opens. Set parameter T74.1 higher so that cavity ventilation will be working when mold opens.</p>
+
+      <h4>Part bending along the long-edge</h4>
+      <p>1. If part is bending along the long edge, it means that the part is too warm when leaving the mold</p>
+      
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
