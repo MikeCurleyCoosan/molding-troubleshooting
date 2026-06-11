@@ -42,6 +42,59 @@
         <p> · In <b>Standby mode</b>, reset the M5, I5, and E5 alarms as follows</p>
         <p>       1. Press and hold <b>Clamp Close</b></p>
         <p>       2. While continuing to hold Clamp Close, press and hold <b>Inject</b></p>
+        <p>       3. While continuing to hold both previous buttons, press and hold <b>Reset</b></p>
+        <p>       4. Keep all three buttons held continuously for 10 seconds</p>
+
+        <p> · Reset all alarms on the alarm page. You may have to press Reset 3-4 times for alarms to clear.</p>
+        <p> · If alarms E15/I15/M15 occur, the machine needs to be power-cycled and the process executed again.</p>
+        <p> · Once all alarms are reset and each axis can move, you can set the zero points for each axis.</p>
+        <p> · Input the user password (Ctrl + Up, type 7777 into the dialog box, and press Enter).</p>
+
+        <h3>Memory check screen setup (Ctrl + F8 and select screen 3)</h3>
+
+        <p> · Set up the first three data boxes as shown in Figure 1.</p>
+        <p> · In the first “Type” box, select Flag-B. In the “Offset” box next to this, enter a value of 31 (Injection).</p>
+        <p> · In the second “Type” box, select Flag-B. In the “Offset” box next to this, enter a value of 32 (Clamp).</p>
+        <p> · In the third “Type” box, select Flag-B. In the “Offset” box next to this, enter a value of 98 (Ejector).</p>
+
+        <img src="../images/figure1.jpg" class="img-fluid" alt="Emergency Mode">
+
+        <h3>Emergency mode calibration</h3>
+
+        <h4> (Injection)</h4>
+        <p> · Open the I/O screen (Ctrl + F2). </p>
+        <p> · Ensure the injection unit is retracted and the screw is in the fully forward position.</p>
+        <p> · <b>Press and hold</b> the Inject Forward button and toggle the IJ Encoder Off box to “On”. It will automatically turn back off afterwards.</p>
+        <p> · The detected value should now read “-510”.</p>
+        <p> · Open the memory check screen (Ctrl + F8, then select screen 3).</p>
+        <p> · In the first Data 0 box, the value should now be 1. This means the procedure has begun but is not complete.</p>
+        <p> · <b>Press and hold</b> the Screw Pull Back button (the screw will slowly move backward) until the first Data 0 box value reads 2. This means the procedure for Injection is complete.</p>
+        <p> · Move the screw back within range to approx. 50.00mm</p>
+
+        <h4> (Clamp)</h4>
+        <p> · Open the I/O screen (Ctrl + F2). </p>
+        <p> · Ensure the mould space is open by 5-10 mm and the clamp is fully closed over.</p>
+        <p> · <b>Press and hold</b> the Clamp Close button and toggle the M Encoder Off box to “On”. It will automatically turn back off afterwards.</p>
+        <p> · The detected value should now read “2”. </p>
+        <p> · Open the memory check screen (Ctrl + F8, then select screen 3).</p>
+        <p> · In the second Data 0 box, the value should now be 1. This means the procedure has begun but is not complete.</p>
+        <p> · Press and hold the Clamp Open button (on the Primary Package machine, be careful that flow sensor cables do not get caught on the item pillar) until the second Data 0 box value reads 2. This means the procedure for Clamping is complete.</p>
+        <p> · Move the clamp unit back within range to approx. 140.00mm</p>
+
+        <h4>(Ejector - to complete the ejector setup the B side mould must be removed)</h4>
+        <p> · Open the I/O screen (Ctrl + F2).</p>
+        <p> · Ensure the ejectors are in the fully retracted position.</p>
+        <p> · <b>Press and hold</b> the Ejector Retract button and toggle the EJ Encoder Off box to “On”. It will automatically turn back off afterwards.</p>
+        <p> · The detected value should now read “-50”.</p>
+        <p> · Open the memory check screen (Ctrl + F8, then select screen 3).</p>
+        <p> · In the third Data 0 box, the value should now be 1. This means the procedure has begun but is not complete.</p>
+        <p> · <b>Press and hold</b> the Ejector Forward button (the ejector bar will slowly move forward) until the third Data 0 box value reads 2. This means the procedure for the Ejector is complete.</p>
+        <p> · Retract the ejectors back within the range allowing you to reinstall the B side base.</p>
+        <p> · The Data 0 fields should all change from 2 to 0 when the last axis has completed the procedure.</p>
+        <p> · If all fields are 0, return to the I/O screen (Ctrl + F2) and turn off emergency mode.</p>
+        <p> · If emergency mode <b>does not</b> turn back on, the procedure is complete.</p>
+
+        <img src="../images/figure2.jpg" class="img-fluid" alt="Emergency Mode Final">
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
